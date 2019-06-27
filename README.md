@@ -3,7 +3,7 @@ A clean theme for [the Clover UEFI bootloader](http://sourceforge.net/projects/c
 based off [clover-theme-minimal](https://github.com/al3xtjames/clover-theme-minimal) 
 by Alex James.
 
-![Screenshot of the theme](http://i.imgbox.com/4gssLdSI.png)
+![Screenshot of the theme](screenshot.png)
 
 ## Installation
 1. Mount the EFI partition where Clover is installed. For me, it's /dev/sdb1:
