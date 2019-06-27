@@ -39,6 +39,17 @@ sudo cp -r ./ursa-major-clover/ursa-major-clover /mnt/EFI/CLOVER/themes/
 </dict>
 ```
 
+## Customization
+
+By default, the Functions (e.g. About, Restart, and Shutdown) are disabled.
+There are matching icons for these buttons, though, and they can be enabled
+by modifying the `theme.plist` file:
+
+```plist
+<key>Functions</key>
+<true/>
+```
+
 ## Credits
 Thanks to Alex James for the original Clover Minimal Theme, and Evan Purkhiser 
 for the [rEFInd-minimal](https://github.com/EvanPurkhiser/rEFInd-minimal) theme
