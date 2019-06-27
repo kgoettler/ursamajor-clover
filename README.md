@@ -1,4 +1,4 @@
-# Clover Minimal Theme
+# Ursa Major Clover Theme
 A clean theme for [the Clover UEFI bootloader](http://sourceforge.net/projects/cloverefiboot)
 based off [clover-theme-minimal](https://github.com/al3xtjames/clover-theme-minimal) 
 by Alex James.
