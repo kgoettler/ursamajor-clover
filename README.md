@@ -1,11 +1,7 @@
-# Ursa Major Clover Theme
-A clean theme for [the Clover UEFI bootloader](http://sourceforge.net/projects/cloverefiboot)
-based off [clover-theme-minimal](https://github.com/al3xtjames/clover-theme-minimal) 
-by Alex James.
-
 ![Screenshot of the theme](screenshot.png)
 
-This theme also features custom colored OS icons, based on the Ursa Major colorscheme.
+A clean theme for [the Clover UEFI bootloader](http://sourceforge.net/projects/cloverefiboot)
+based on the Ursa Major colorscheme.
 
 ## Installation
 
@@ -16,26 +12,21 @@ sudo mkdir /mnt/macos
 sudo mount /dev/sdb1
 ```
 
-2. Clone this repository to your disk. the Clover theme directory (/EFI/CLOVER/themes). 
+2. Clone this repository to your disk and copy to the Clover theme directory on
+your EFI partition (/EFI/CLOVER/themes)
 
 ```bash
 git clone https://github.com/kgoettler/ursa-major-clover.git
+sudo cp -r ./ursamajor-clover /mnt/EFI/CLOVER/themes/
 ```
 
-3. Copy the `ursa-major-clover` directory in this repository to the Clover 
-   theme directory (/EFI/CLOVER/themes)
-
-```bash
-sudo cp -r ./ursa-major-clover/ursa-major-clover /mnt/EFI/CLOVER/themes/
-```
-
-4. Edit your Clover config.plist (/EFI/CLOVER/config.plist) to select the theme.
+3. Edit your Clover config.plist (/EFI/CLOVER/config.plist) to select the theme.
 
 ```plist
 <key>GUI</key>
 <dict>
 	<key>Theme</key>
-	<string>ursa-major-clover</string>
+	<string>ursamajor-clover</string>
 </dict>
 ```
 
@@ -51,7 +42,5 @@ by modifying the `theme.plist` file:
 ```
 
 ## Credits
-Thanks to Alex James for the original Clover Minimal Theme, and Evan Purkhiser 
-for the [rEFInd-minimal](https://github.com/EvanPurkhiser/rEFInd-minimal) theme
-on which that was based.
-
+Thanks to Alex James for the original [clover-theme-minimal](https://github.com/al3xtjames/clover-theme-minimal) theme,
+which I used as a launching point for this theme.
